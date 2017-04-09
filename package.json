@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-templates",
+  "version": "1.0.0",
+  "description": "Website offering portfolio templates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1qlee/portfolio-templates.git"
+  },
+  "author": "Wonkyu Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1qlee/portfolio-templates/issues"
+  },
+  "homepage": "https://github.com/1qlee/portfolio-templates#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "once": "^1.4.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uncss": "^1.0.6"
+  }
+}
