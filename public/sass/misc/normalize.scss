@@ -2,6 +2,23 @@
 
 /* Document
    ========================================================================== */
+/**
+  Default margins, padding, etc on all html elements
+  */
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong,
+sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header,
+menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
 
 /**
  * 1. Correct the line height in all browsers.
@@ -13,6 +30,17 @@ html {
   line-height: 1.15; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
 }
 
 /* Sections
@@ -24,10 +52,12 @@ html {
 
 article,
 aside,
+figure,
 footer,
 header,
 nav,
-section {
+section,
+div {
   display: block;
 }
 
@@ -36,10 +66,10 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
+// h1 {
+//   font-size: 2em;
+//   margin: 0.67em 0;
+// }
 
 /* Grouping content
    ========================================================================== */
@@ -53,14 +83,6 @@ figcaption,
 figure,
 main { /* 1 */
   display: block;
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-
-figure {
-  margin: 1em 40px;
 }
 
 /**
@@ -234,6 +256,7 @@ optgroup,
 select,
 textarea {
   margin: 0;
+  box-sizing: border-box;
 }
 
 /**

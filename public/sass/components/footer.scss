@@ -1,0 +1,32 @@
+.footer {
+  padding: 10px 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left,
+.footer-right,
+.footer-center {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.footer-left {
+  justify-content: flex-start;
+}
+
+.footer-center {
+  justify-content: center;
+}
+
+.footer-right {
+  justify-content: flex-end;
+}
+
+.footer-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

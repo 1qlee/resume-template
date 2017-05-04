@@ -1,0 +1,15 @@
+.title {
+  font-size: 1.7em;
+  & + .subtitle {
+    margin-top: 25px;
+  }
+}
+
+.subtitle {
+  font-size: 1em;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+}

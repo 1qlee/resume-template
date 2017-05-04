@@ -1,0 +1,20 @@
+$tablet: 725px !default
+$desktop: 1075px !default
+
+// colors
+$orange: #f46e00 !default
+$blue: #0077b5 !default
+$blue-dark: #263238 !default
+$red: #D32F2F !default
+$pink: #E91E63 !default
+$green: #00843D !default
+$grey: #9e9e9e !default
+$grey-light: #efefef !default
+$sky: #1da1f3 !default
+$darkblue: #3b5998 !default
+$shadow: rgba(0,0,0,0.3) !default
+$gold: #C99700 !default
+$white: #fff !default
+$black: rgba(0,0,0,0.9) !default
+
+$colors: (white: $white, black: $black, grey: $grey, shadow: $shadow, gold: $gold, pink: $pink, blue: $blue, green: $green, red: $red, sky: $sky, darkblue: $darkblue) !default

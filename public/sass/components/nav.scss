@@ -1,0 +1,29 @@
+.navbar {
+  background-color: transparent;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-left,
+.nav-right,
+.nav-center {
+  display: flex;
+  flex-grow: 1;
+}
+
+.nav-center {
+  justify-content: center;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

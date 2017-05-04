@@ -1,0 +1,36 @@
+.hero-left {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 50%;
+  height: 100%;
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    &.is-#{$name} {
+      background-color: $color;
+    }
+  }
+}
+
+.hero-right {
+  width: 50%;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 20px;
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    &.is-#{$name} {
+      background-color: $color;
+    }
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  &.is-centered {
+    margin: auto;
+  }
+}

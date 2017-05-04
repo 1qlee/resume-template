@@ -1,0 +1,19 @@
+.content {
+  & + .content {
+    margin-top: 20px;
+  }
+  h1,h2,h3 {
+    & + p {
+      margin-top: 10px;
+    }
+  }
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
