@@ -1,0 +1,13 @@
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+
+  .tag {
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}

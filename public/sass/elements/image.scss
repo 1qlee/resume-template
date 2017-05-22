@@ -1,11 +1,33 @@
 .image {
-  margin: 0 auto 20px;
+  margin: 0 auto;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+  
   img {
-    @include box-shadow(0,10px,30px,$shadow,0);
     @include undraggable;
 
     border-radius: 100%;
-    height: 200px;
-    width: 200px;
+  }
+
+  &.has-shadow {
+    img {
+      @include box-shadow(0,10px,30px,$shadow,0);
+    }
+  }
+
+  &.is-small {
+    img {
+      height: 48px;
+      width: 48px;
+    }
+  }
+
+  &.is-large {
+    img {
+      height: 200px;
+      width: 200px;
+    }
   }
 }

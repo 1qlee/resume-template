@@ -1,0 +1,25 @@
+.box {
+  border-radius: 3px;
+  border: 1px solid $shadow;
+  padding: 20px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    height: calc(100% + 2px);
+    width: 5px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    &.is-#{$name} {
+      &:before {
+        background: $color;
+      }
+    }
+  }
+}

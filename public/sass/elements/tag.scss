@@ -1,0 +1,22 @@
+.tag {
+  display: inline;
+  padding: 5px 8px;
+
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    &.is-#{$name} {
+      background-color: $color;
+      color: $white;
+    }
+  }
+
+  &.is-small {
+    font-size: 0.8em;
+  }
+  &.is-medium {
+    font-size: 1.3em;
+  }
+  &.is-large {
+    font-size: 2em;
+  }
+}
