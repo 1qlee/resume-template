@@ -1,5 +1,11 @@
 .image {
-  &.is-centered {
-    margin: auto;
+  margin: 0 auto 20px;
+  img {
+    @include box-shadow(0,10px,30px,$shadow,0);
+    @include undraggable;
+
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
   }
 }

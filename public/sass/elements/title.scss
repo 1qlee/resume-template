@@ -1,0 +1,36 @@
+.title {
+  font-size: 1.7em;
+  & + .subtitle {
+    margin-top: 25px;
+  }
+}
+
+.subtitle {
+  font-size: 1em;
+}
+
+.heading {
+  // padding-left: 8px;
+  // position: relative;
+  //
+  // @include until-wide {
+  //   display: inline-block;
+  //   padding-left: 0;
+  //   padding-bottom: 8px;
+  // }
+  //
+  // &:before {
+  //   content: "";
+  //   background: $blue;
+  //   width: 3px;
+  //   height: 100%;
+  //   position: absolute;
+  //   left: 0;
+  //
+  //   @include until-wide {
+  //     height: 3px;
+  //     width: 1em;
+  //     bottom: 0;
+  //   }
+  // }
+}

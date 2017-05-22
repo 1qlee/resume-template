@@ -3,14 +3,32 @@ button,
 input,
 select,
 textarea {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   color: $black;
   font-size: 16px;
 }
 
+p,
+h1,
+h2,
+h3,
+span,
+a,
+small {
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    &.is-#{$name} {
+      color: $color;
+    }
+  }
+}
+
+small {
+  font-size: 0.8em;
+}
+
 p {
   font-size: 1em;
-  line-height: 1.5;
   font-weight: 400;
 }
 
@@ -19,10 +37,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  word-break: break-all;
 }
 
 h3 {
-  font-size: 1.25em;
-  line-height: 1.2;
+  font-size: 1.15em;
+}
+
+a {
+  text-decoration: none;
 }

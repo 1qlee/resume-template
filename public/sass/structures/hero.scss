@@ -1,4 +1,4 @@
-.hero-left {
+.hero {
   display: flex;
   align-items: stretch;
   flex-direction: column;
@@ -12,18 +12,8 @@
       background-color: $color;
     }
   }
-}
-
-.hero-right {
-  width: 50%;
-  height: 100%;
-  overflow-y: scroll;
-  padding: 20px;
-  @each $name, $pair in $colors {
-    $color: nth($pair, 1);
-    &.is-#{$name} {
-      background-color: $color;
-    }
+  @include mobile {
+    width: 100%;
   }
 }
 

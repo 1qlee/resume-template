@@ -1,27 +1,29 @@
 .columns {
   display: flex;
+
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @include until-wide {
+    flex-direction: column;
   }
 }
 
 .column {
-  flex-basis: 0;
-  flex-grow: 1;
-  flex-shrink: 1;
   padding: 10px;
-  @include tablet {
+
+  @include wide {
     @for $i from 1 through 12 {
       &.is-#{$i} {
         width: ($i / 12) * 100%;
       }
     }
   }
-  @include desktop {
-    @for $i from 1 through 12 {
-      &.is-#{$i} {
-        width: ($i / 12) * 100%;
-      }
-    }
+
+  @include until-wide {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 }

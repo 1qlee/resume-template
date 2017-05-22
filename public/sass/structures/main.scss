@@ -1,0 +1,8 @@
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+}

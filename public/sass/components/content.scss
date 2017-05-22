@@ -2,18 +2,81 @@
   & + .content {
     margin-top: 20px;
   }
-  h1,h2,h3 {
+
+  p {
+    line-height: 1.5;
+
     & + p {
       margin-top: 10px;
     }
   }
+
+  h1,
+  h2,
+  h3 {
+
+    & + p {
+      margin-top: 10px;
+    }
+  }
+
+  small {
+    display: block;
+    font-size: 0.8em;
+    margin: 10px 0;
+  }
+
+  a {
+    @include transition(color 0.2s ease);
+    
+    color: $black;
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+  }
+
   ul {
     list-style: disc;
     padding-left: 20px;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
     li {
+      line-height: 1.5;
+
       &:not(:last-child) {
         margin-bottom: 10px;
       }
     }
   }
+
+  &.is-boxed {
+    border-radius: 3px;
+    border: 1px solid $shadow;
+    padding: 20px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      height: calc(100% + 2px);
+      width: 5px;
+      border-radius: 3px 0 0 3px;
+    }
+
+    @each $name, $pair in $colors {
+      $color: nth($pair, 1);
+      &.is-#{$name} {
+        &:before {
+          background: $color;
+        }
+      }
+    }
+  }
+
 }

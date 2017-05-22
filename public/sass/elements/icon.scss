@@ -1,0 +1,24 @@
+.icon {
+  .fa {
+    font-size: 1em;
+  }
+
+  // Size modifiers
+  &.is-small {
+    .fa {
+      font-size: 0.8em;
+    }
+  }
+
+  &.is-medium {
+    .fa {
+      font-size: 1.3em;
+    }
+  }
+
+  &.is-large {
+    .fa {
+      font-size: 2em;
+    }
+  }
+}

@@ -1,8 +1,17 @@
 .section {
-  &.is-fullscreen {
-    padding: 0;
-    height: 100vh;
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 40px 40px;
+
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    &.is-#{$name} {
+      background-color: $color;
+    }
+  }
+
+  @include mobile {
     width: 100%;
-    display: flex;
   }
 }
