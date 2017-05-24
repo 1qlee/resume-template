@@ -1,0 +1,82 @@
+.form {
+  padding: 20px;
+  // border: 1px solid $shadow;
+  // border-radius: 3px;
+  @include box-shadow(0,1px,3px,$shadow,1px);
+
+  h1,
+  h2,
+  h3 {
+    & + p {
+      margin-top: 10px;
+    }
+  }
+}
+
+.legend {
+  font-size: 1.15em;
+  margin-bottom: 10px;
+}
+
+.control {
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.input {
+  @include transition(all 0.2s ease);
+  border: 1px solid $shadow;
+  padding: 5px;
+  border-radius: 3px;
+  width: 100%;
+
+  &:hover {
+    border-color: $black-light;
+  }
+
+  &:focus {
+    border-color: $black;
+  }
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.textarea {
+  @include transition(all 0.2s ease);
+  border-radius: 3px;
+  border: 1px solid $shadow;
+  padding: 5px;
+  resize: none;
+  width: 100%;
+
+  &:hover {
+    border-color: $black-light;
+  }
+
+  &:focus {
+    border-color: $black;
+  }
+}
+
+.button {
+  white-space: nowrap;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+
+  // Colors
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    $color-invert: findColorInvert($color);
+    &.is-#{$name} {
+      background-color: $color;
+      color: $color-invert;
+    }
+  }
+}

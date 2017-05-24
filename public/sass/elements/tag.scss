@@ -1,12 +1,14 @@
 .tag {
+  border-radius: 3px;
   display: inline;
   padding: 5px 8px;
 
   @each $name, $pair in $colors {
     $color: nth($pair, 1);
+    $color-invert: findColorInvert($color);
     &.is-#{$name} {
       background-color: $color;
-      color: $white;
+      color: $color-invert;
     }
   }
 

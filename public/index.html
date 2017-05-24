@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" type="text/css" href="/css/min/portfolio.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
   <script src="https://use.fontawesome.com/00df4d5dec.js"></script>
 </head>
 <body>
@@ -21,9 +21,20 @@
             </p>
           </div> -->
           <div class="nav-center">
-            <span class="icon nav-item is-medium">
-              <i class="fa fa-medium"></i>
-            </span>
+            <div class="icon-bar">
+              <a href="/" class="icon nav-item is-medium is-white">
+                <i class="fa fa-medium"></i>
+              </a>
+              <a href="/" class="icon nav-item is-medium is-white">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="/" class="icon nav-item is-medium is-white">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="/" class="icon nav-item is-medium is-white">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
           </div>
           <!-- <div class="nav-right">
             <p class="nav-item">
@@ -32,8 +43,8 @@
           </div> -->
         </nav>
       </header>
-      <div class="hero-content is-centered">
-        <figure class="image is-large has-shadow">
+      <div class="hero-content is-center">
+        <figure class="image is-large has-shadow is-center">
           <img src="/images/hero-photo.jpg">
         </figure>
         <h1 class="title is-white has-text-center">
@@ -48,7 +59,7 @@
       <div class="columns">
         <div class="column is-3">
           <div class="content">
-            <h3 class="heading">About Me</h3>
+            <h2 class="heading">About Me</h2>
           </div>
         </div>
         <div class="column is-9">
@@ -58,26 +69,49 @@
               say significant things about yourself like your interests, personality, and character.
               Use this space wisely!
             </p>
+            <p>
+              <strong>Age</strong>: 25
+            </p>
+            <p>
+              <strong>Location</strong>: NYC
+            </p>
+            <p>
+              <strong>Interests</strong>: Anything with a ball
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-3">
+          <h2 class="heading">Education</h2>
+        </div>
+        <div class="column is-9">
+          <div class="content">
+            <h3><strong>University of CompSci</strong></h3>
+            <p class="is-lightblack">B.S. Computer Science | September 2007 - January 2011</p>
+            <p>
+              I graduated with a degree in Computer Science and a GPA of 4.0!
+            </p>
           </div>
         </div>
       </div>
       <div class="columns">
         <div class="column is-3">
           <div class="content">
-            <h3 class="heading">Experience</h3>
+            <h2 class="heading">Experience</h2>
           </div>
         </div>
         <div class="column is-9">
-          <div class="box is-blue content">
+          <div class="content">
             <h3>
-              <span>Google</span>
-              <a href="https://www.google.com/" target="_blank" rel="noopener"  class="icon is-small">
+              <strong>Google</strong>
+              <a href="https://www.google.com/" target="_blank" rel="noopener"  class="icon is-medium">
                 <i class="fa fa-external-link"></i>
               </a>
             </h3>
-            <small class="is-lightblack">
+            <p class="is-lightblack">
               Lead Software Engineer | July 2015 - Current
-            </small>
+            </p>
             <p>
               Software Engineer at Google. Currently working on Google Calendar. I was previously on
               the Google Play team, but was removed for misconduct.
@@ -88,16 +122,16 @@
               <li>Make big decisions</li>
             </ul>
           </div>
-          <div class="box is-blue content">
+          <div class="content">
             <h3>
-              <span>McGoogle</span>
-              <a href="https://www.google.com/mcgoogle" target="_blank" rel="noopener" class="icon is-small">
+              <strong>McGoogle</strong>
+              <a href="https://www.google.com/mcgoogle" target="_blank" rel="noopener" class="icon is-medium">
                 <i class="fa fa-external-link"></i>
               </a>
             </h3>
-            <small class="is-lightblack">
+            <p class="is-lightblack">
               Product Manager | September 2011 - July 2015
-            </small>
+            </p>
             <p>
               I was the main product manager for the McGoogle mobile application.
             </p>
@@ -106,16 +140,16 @@
               <li>Managed product roadmap</li>
             </ul>
           </div>
-          <div class="box is-blue content">
+          <div class="content">
             <h3>
-              <span>McDonald's</span>
-              <a href="https://www.mcdonalds.com" target="_blank" rel="noopener" class="icon is-small">
+              <strong>McDonald's</strong>
+              <a href="https://www.mcdonalds.com" target="_blank" rel="noopener" class="icon is-medium">
                 <i class="fa fa-external-link"></i>
               </a>
             </h3>
-            <small class="is-lightblack">
+            <p class="is-lightblack">
               Kitchen | December 2009 - January 2011
-            </small>
+            </p>
             <p>
               Grilled hamburger patties to absolute perfection while I dreamt of being a developer.
             </p>
@@ -128,68 +162,98 @@
       </div>
       <div class="columns">
         <div class="column is-3">
-          <h3 class="heading">Projects</h3>
+          <h2 class="heading">Projects</h2>
         </div>
         <div class="column is-9">
-          <div class="showcase">
-            <figure class="image is-small">
-              <img src="https://qph.ec.quoracdn.net/main-qimg-58b8aee066ab040b3790f65dc3047853" />
-            </figure>
-            <div class="content">
-              <h3>
-                <span>Stahbux</span>
-                <a href="https://www.github.com" class="icon">
-                  <i class="fa fa-github"></i>
-                </a>
-              </h3>
-              <p>
-                App that keeps track of all Starbucks' hidden menu items.
-              </p>
-              <div class="rows">
-                <span class="tag is-small is-blue">iOS</span>
-                <span class="tag is-small is-blue">Swift</span>
-              </div>
+          <div class="content">
+            <h3>
+              <strong>Stahbux</strong>
+              <a href="https://www.github.com" class="icon is-medium">
+                <i class="fa fa-github"></i>
+              </a>
+            </h3>
+            <p>
+              App that keeps track of all Starbucks' hidden menu items.
+            </p>
+            <div class="row">
+              <span class="tag is-small is-blue">iOS</span>
+              <span class="tag is-small is-blue">Swift</span>
             </div>
           </div>
-          <div class="showcase">
-            <figure class="image is-small">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Aceofspades.svg/170px-Aceofspades.svg.png" />
-            </figure>
-            <div class="content">
-              <h3>
-                <span>Texas Hold Em'</span>
-                <a href="https://www.github.com" class="icon">
-                  <i class="fa fa-github"></i>
-                </a>
-              </h3>
-              <p>
-                Web application copy of Texas Hold Em' card game.
-              </p>
-              <div class="rows">
-                <span class="tag is-small is-blue">HTML5</span>
-                <span class="tag is-small is-blue">CSS3</span>
-                <span class="tag is-small is-blue">JavaScript</span>
-                <span class="tag is-small is-blue">NodeJS</span>
-                <span class="tag is-small is-blue">MySQL</span>
-              </div>
+          <div class="content">
+            <h3>
+              <strong>Texas Hold Em'</strong>
+              <a href="https://www.github.com" class="icon is-medium">
+                <i class="fa fa-github"></i>
+              </a>
+            </h3>
+            <p>
+              Web application copy of Texas Hold Em' card game.
+            </p>
+            <div class="row">
+              <span class="tag is-small is-blue">HTML5</span>
+              <span class="tag is-small is-blue">CSS3</span>
+              <span class="tag is-small is-blue">JavaScript</span>
+              <span class="tag is-small is-blue">NodeJS</span>
+              <span class="tag is-small is-blue">MySQL</span>
             </div>
           </div>
         </div>
       </div>
       <div class="columns">
         <div class="column is-3">
-          <h3 class="heading">Blog Posts</h3>
+          <h2 class="heading">Blog Posts</h2>
         </div>
         <div class="column is-9">
-
+          <a href="https://www.medium.com">
+            <div class="box content">
+              <h3><strong>How I survived the fast food industry</strong></h3>
+              <p>
+                January 2017
+              </p>
+            </div>
+          </a>
+          <a href="https://www.medium.com">
+            <div class="box content">
+              <h3><strong>Starting up is harder than you think..</strong></h3>
+              <p>
+                September 2016
+              </p>
+            </div>
+          </a>
+          <a href="https://www.medium.com">
+            <div class="box content">
+              <h3><strong>My daily routine</strong></h3>
+              <p>
+                May 2015
+              </p>
+            </div>
+          </a>
         </div>
       </div>
       <div class="columns">
         <div class="column is-3">
-
+          <h2 class="heading">Contact</h2>
         </div>
         <div class="column is-9">
-
+          <form class="form">
+            <h3 class="form-title"><strong>Send me an email!</strong></h3>
+            <p class="control">
+              <label for="name" class="label">Name</label>
+              <input type="text" name="name" id="name" class="input" placeholder="Name">
+            </p>
+            <p class="control">
+              <label for="email" class="label">Email</label>
+              <input type="text" name="email" id="email" class="input" placeholder="Email">
+            </p>
+            <p class="control">
+              <label for="message" class="label">Message</label>
+              <textarea name="message" id="message" class="textarea" placeholder="Message" rows="5" autocomplete="off"></textarea>
+            </p>
+            <p class="control">
+              <button class="button is-blue" type="submit">Send</button>
+            </p>
+          </form>
         </div>
       </div>
       <footer class="footer">

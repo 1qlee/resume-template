@@ -14,13 +14,14 @@
   }
   @include mobile {
     width: 100%;
+    padding-bottom: 80px;
   }
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
-  &.is-centered {
+  &.is-center {
     margin: auto;
   }
 }

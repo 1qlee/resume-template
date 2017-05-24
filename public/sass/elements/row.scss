@@ -1,10 +1,10 @@
-.rows {
+.row {
   display: flex;
   flex-wrap: wrap;
 
   .tag {
-    margin-right: 8px;
-    margin-bottom: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 
   &:not(:first-child) {

@@ -5,7 +5,7 @@ select,
 textarea {
   font-family: 'Open Sans', Arial, sans-serif;
   color: $black;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 p,
@@ -27,6 +27,10 @@ small {
   font-size: 0.8em;
 }
 
+strong {
+  font-weight: 600;
+}
+
 p {
   font-size: 1em;
   font-weight: 400;
@@ -34,17 +38,20 @@ p {
 
 h1 {
   font-size: 2em;
+  word-wrap: break-word;
 }
 
 h2 {
   font-size: 1.3em;
-  word-break: break-all;
+  word-wrap: break-word;
 }
 
 h3 {
   font-size: 1.15em;
+  word-wrap: break-word;
 }
 
 a {
   text-decoration: none;
+  color: $black;
 }

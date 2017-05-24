@@ -2,7 +2,7 @@
   display: flex;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   @include until-wide {

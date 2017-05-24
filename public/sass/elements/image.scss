@@ -1,13 +1,14 @@
 .image {
-  margin: 0 auto;
+  &.is-center {
+    margin: 0 auto;
+  }
 
   &:first-child {
     margin-bottom: 20px;
   }
-  
+
   img {
     @include undraggable;
-
     border-radius: 100%;
   }
 
@@ -26,8 +27,8 @@
 
   &.is-large {
     img {
-      height: 200px;
-      width: 200px;
+      height: 250px;
+      width: 250px;
     }
   }
 }

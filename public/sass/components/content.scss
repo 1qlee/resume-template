@@ -1,6 +1,6 @@
 .content {
   & + .content {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   p {
@@ -14,9 +14,8 @@
   h1,
   h2,
   h3 {
-
     & + p {
-      margin-top: 10px;
+      margin-top: 5px;
     }
   }
 
@@ -31,7 +30,7 @@
     color: $black;
     &:hover,
     &:focus {
-      color: $orange;
+      color: $blue;
     }
   }
 
@@ -44,7 +43,7 @@
     }
 
     li {
-      line-height: 1.5;
+      line-height: 1.2;
 
       &:not(:last-child) {
         margin-bottom: 10px;
