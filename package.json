@@ -1,8 +1,8 @@
 {
   "name": "resume-template",
-  "version": "1.0.4",
+  "version": "0.0.1",
   "description": "A simple CSS file for a resume or portfolio",
-  "main": "index.js",
+  "main": "portfolio.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,19 +10,23 @@
     "type": "git",
     "url": "git+https://github.com/1qlee/portfolio-templates.git"
   },
-  "engines": {
-    "node": "*"
-  },
   "author": "Wonkyu Lee",
-  "license": "ISC",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "resume",
+    "portfolio",
+    "template"
+  ],
+  "_npmUser": {
+    "name": "1qlee93",
+    "email": "wonq33@gmail.com"
+  },
   "bugs": {
     "url": "https://github.com/1qlee/portfolio-templates/issues"
   },
   "homepage": "https://github.com/1qlee/portfolio-templates#readme",
-  "dependencies": {
-    "express": "^4.15.2",
-    "once": "^1.4.0"
-  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.4",
