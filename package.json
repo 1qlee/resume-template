@@ -19,6 +19,11 @@
     "portfolio",
     "template"
   ],
+  "scripts": {
+    "watch": "gulp watch",
+    "compile": "gulp sass",
+    "minify": "gulp minify-css"
+  },
   "_npmUser": {
     "name": "1qlee93",
     "email": "wonq33@gmail.com"
