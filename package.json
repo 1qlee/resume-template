@@ -1,7 +1,7 @@
 {
   "name": "portfolio-templates",
   "version": "1.0.0",
-  "description": "Website offering portfolio templates.",
+  "description": "A simple CSS file for a resume or portfolio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

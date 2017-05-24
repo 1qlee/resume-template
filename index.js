@@ -15,3 +15,7 @@ app.set('views', __dirname + '/views');
 app.get('/', function(req, res) {
   res.render('index');
 });
+
+exports.printMsg = function() {
+  console.log("Test message, is this working!?");
+}
