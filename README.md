@@ -8,7 +8,7 @@ A simple and clean portfolio / resume design. Modular SASS files; one CSS file o
 npm install myresume
 ```
 
-You may find the package here: [npm](https://npmjs.com/package/portfolio-templates).
+You may find the package here: [npm](https://npmjs.com/package/myresume).
 
 ## One CSS File
 
