@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-templates",
+  "name": "portfolio-template",
   "version": "1.0.0",
   "description": "A simple CSS file for a resume or portfolio",
   "main": "index.js",
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/1qlee/portfolio-templates.git"
+  },
+  "engines": {
+    "node": "*"
   },
   "author": "Wonkyu Lee",
   "license": "ISC",
