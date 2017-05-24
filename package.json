@@ -1,6 +1,6 @@
 {
   "name": "portfolio-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple CSS file for a resume or portfolio",
   "main": "index.js",
   "scripts": {
